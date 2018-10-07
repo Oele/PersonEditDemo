@@ -146,8 +146,11 @@ class PersonEdit extends Component {
           </div>
         </CardContent>
         <CardActions className={classes.cardActions}>
-          <IconButton aria-label="Opslaan">
-            <SaveIcon onClick={() => this.props.onSave(this.state.person)} />
+          <IconButton
+            aria-label="Opslaan"
+            onClick={() => this.props.onSave(this.state.person)}
+          >
+            <SaveIcon />
           </IconButton>
           <IconButton
             aria-label="Verwijderen"

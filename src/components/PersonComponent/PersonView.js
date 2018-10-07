@@ -88,8 +88,11 @@ class PersonView extends Component {
           )}
         </CardContent>
         <CardActions className={classes.cardActions}>
-          <IconButton aria-label="Aanpassen">
-            <EditIcon onClick={() => this.props.onEdit()} />
+          <IconButton
+            aria-label="Aanpassen"
+            onClick={() => this.props.onEdit()}
+          >
+            <EditIcon />
           </IconButton>
           <IconButton
             aria-label="Verwijderen"
